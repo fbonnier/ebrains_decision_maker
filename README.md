@@ -1,2 +1,2 @@
-# ebrains_decision_maker
-Workflow step to produce a decision score for model verification of EBRAINS model
+# decision-maker
+The Decision Maker is a module that helps to make a decision from an input report.

@@ -1,0 +1,55 @@
+{
+  "Metadata" : {
+      "workdir": "/tmpdir/test/workdir",
+      "workflow": {
+          "run": {"url": "http://test.com/run.cwl", "path": "/tmpdir/test/run.cwl"},
+          "data": {"url": "http://test.com/data.yml", "path": "/tmpdir/test/data.yml"}
+      },
+      "run": {"url": "http://test.com/code.tar", "path": "/tmpdir/test/workdir/code", "pre-instruction": ["untar", "compile", "move inputs"], "instruction": "python3 run.py --para1 1 --para2 file > out.txt"},
+      "inputs": [{"url": "http://test.com/input1.dat", "path": "/tmpdir/test/workdir/code/inputs/input1.dat"}, {"url": "http://test.com/input2.json", "path": "/tmpdir/test/workdir/code/inputs/input2.json"}],
+      "outputs": [{"url": "http://test.com/input1.dat", "path": "/tmpdir/test/workdir/code/outputs/output1.dat"}, {"url": "http://test.com/output2.json", "path": "/tmpdir/test/workdir/code/inputs/output2.json"}],
+      "environment": {"pip install": [""], "module deps": [""], "profiling configuration": [""]}
+  },
+
+  "Run": {
+    "run": {"nCores": 2},
+    "outputs": [{"url": "", "path": "/tmpdir/test/workdir/code/outputs/output1.dat"}, {"url": "", "path": "/tmpdir/test/workdir/code/inputs/output2.json"}],
+    "errors": [],
+    "profiling data": {"exec time (ms)": 2, "nCores": 2, "parallel efficiency (%)": 80, "memory leak (bytes)": 2000}
+  },
+
+  "Comparison": [
+      {"result1": {"url": "http://test.com/test-file.txt", "path": "/tmpdir/test/workdir/outputs/HASH0891563518.txt", "size":1000, "type":"file"},
+      "result2": {"url": "", "path": "/tmpdir/test/workdir/code/outputs/test-file.txt", "size":1000, "type":"file"},
+      "method": "nilsimsa",
+      "pairing score":98,
+      "differences":{ "pose": {"value": 1.2, "type": "levenshtein"},
+                      "prose": {"value": 3.14, "type": "levenshtein"},
+                      "pause": {"value": 0.0001, "type": "arithmetic"},
+                      "phose": {"value": 8, "type": "arithmetic"},
+                      "pnose": {"value": 7541, "type": "arithmetic"}},
+      "missing": [],
+      "errors": []
+      },
+      {"result1": {"url": "http://test.com/analogsignals.neo", "path": "/tmpdir/test/workdir/outputs/HASH089498468684.neo", "size":1000, "type":"file"},
+      "result2": {"url": "", "path": "/tmpdir/test/workdir/code/outputs/nothing-related.neo", "size":2424, "type":"file"},
+      "method": "",
+      "pairing score":22,
+      "differences":{},
+      "missing": [],
+      "errors": ["Uncomparable"]
+      },
+      {"result1": {"url": "http://test.com/analogsignals.neo", "path": "/tmpdir/test/workdir/outputs/HASH089498468684.neo", "size":1000, "type":"file"},
+      "result2": {"url": "", "path": "/tmpdir/test/workdir/code/outputs/analogsignals.neo", "size":1000, "type":"file"},
+      "method": "neo",
+      "pairing score":100,
+      "differences":{ "pose": {"value": 5.2138, "type": "levenshtein"},
+                      "prose": {"value": 144978, "type": "arithmetic"},
+                      "pause": {"value": 0.0000001, "type": "arithmetic"},
+                      "phose": {"value": 879, "type": "arithmetic"},
+                      "pnose": {"value": 7541, "type": "arithmetic"}},
+      "missing": [],
+      "errors": []
+      }
+  ]
+}

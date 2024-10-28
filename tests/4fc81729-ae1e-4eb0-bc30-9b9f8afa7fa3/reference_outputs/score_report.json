@@ -1,0 +1,945 @@
+{
+    "score": 12.927402688452306,
+    "log": [
+        "Traceback (most recent call last):\n  File \"/ebrains_decision_maker/main.py\", line 129, in <module>\n    report_data = json.load (report_file)\n  File \"/usr/lib/python3.8/json/__init__.py\", line 293, in load\n    return loads(fp.read(),\n  File \"/usr/lib/python3.8/json/__init__.py\", line 357, in loads\n    return _default_decoder.decode(s)\n  File \"/usr/lib/python3.8/json/decoder.py\", line 337, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n  File \"/usr/lib/python3.8/json/decoder.py\", line 355, in raw_decode\n    raise JSONDecodeError(\"Expecting value\", s, err.value) from None\njson.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n",
+        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/Comparison.md: n empty lines = 19",
+        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/README.md: n empty lines = 7",
+        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/compare_tests.py: n empty lines = 18",
+        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/network.py: n empty lines = 92",
+        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/network_params.py: n empty lines = 17",
+        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/helpers.py: n empty lines = 69",
+        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/run_microcircuit.py: n empty lines = 15",
+        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/osbSessions/MicrocircuitNoInput_2pcnt_MODELf32339edc42e9df4a4be1ec00eeee8e4.xmi: n empty lines = 0",
+        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/network.py: n empty lines = 34",
+        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/plotting.py: n empty lines = 13",
+        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/microcircuit.py: n empty lines = 22",
+        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/connectivity.py: n empty lines = 4",
+        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/scaling.py: n empty lines = 6",
+        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/run_microcircuit.py: n empty lines = 8"
+    ],
+    "error": [
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "Unsupported MIME type text/plain",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/x-objective-c",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain",
+        "Unsupported MIME type text/plain"
+    ],
+    "report": {
+        "Verification Method Documentation Analysis": {
+            "readme": true,
+            "nlines": 96678,
+            "ncomments": 237,
+            "ratio comments": 3.4192215076184436,
+            "files": [
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/Comparison.md",
+                    "score": 0.0,
+                    "nlines": 61,
+                    "ncomments": 0,
+                    "error": [],
+                    "log": [
+                        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/Comparison.md: n empty lines = 19"
+                    ]
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/README.md",
+                    "score": 0.0,
+                    "nlines": 13,
+                    "ncomments": 0,
+                    "error": [],
+                    "log": [
+                        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/README.md: n empty lines = 7"
+                    ]
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/.gitignore",
+                    "score": 0.0,
+                    "nlines": 32,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/CITATION.md",
+                    "score": 0.0,
+                    "nlines": 7,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/TestedRates.png",
+                    "score": 0.0,
+                    "nlines": 0,
+                    "ncomments": 0,
+                    "error": [
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/LICENSE",
+                    "score": 0.0,
+                    "nlines": 553,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/.travis.yml",
+                    "score": 0.0,
+                    "nlines": 41,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/_osb.yml",
+                    "score": 0.0,
+                    "nlines": 2,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/compare_tests.py",
+                    "score": 0.0,
+                    "nlines": 39,
+                    "ncomments": 0,
+                    "error": [],
+                    "log": [
+                        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/compare_tests.py: n empty lines = 18"
+                    ]
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/make_tests.sh",
+                    "score": 0.0,
+                    "nlines": 4,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/.github/workflows/omv-ci.yml",
+                    "score": 0.0,
+                    "nlines": 49,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/sim_params.py",
+                    "score": 0.0,
+                    "nlines": 52,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/README.rst",
+                    "score": 0.0,
+                    "nlines": 84,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/microcircuit.png",
+                    "score": 0.0,
+                    "nlines": 0,
+                    "ncomments": 0,
+                    "error": [
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/.test.pynest.mep",
+                    "score": 0.0,
+                    "nlines": 26,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/network.py",
+                    "score": 8.108108108108109,
+                    "nlines": 407,
+                    "ncomments": 33,
+                    "error": [],
+                    "log": [
+                        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/network.py: n empty lines = 92"
+                    ]
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/raster_plot.png",
+                    "score": 0.0,
+                    "nlines": 0,
+                    "ncomments": 0,
+                    "error": [
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/.test.pynest.omt",
+                    "score": 0.0,
+                    "nlines": 100,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/network_params.py",
+                    "score": 81.48148148148148,
+                    "nlines": 81,
+                    "ncomments": 66,
+                    "error": [],
+                    "log": [
+                        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/network_params.py: n empty lines = 17"
+                    ]
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/stimulus_params.py",
+                    "score": 0.0,
+                    "nlines": 59,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/box_plot.png",
+                    "score": 0.0,
+                    "nlines": 0,
+                    "ncomments": 0,
+                    "error": [
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/helpers.py",
+                    "score": 9.198813056379821,
+                    "nlines": 337,
+                    "ncomments": 31,
+                    "error": [],
+                    "log": [
+                        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/helpers.py: n empty lines = 69"
+                    ]
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/run_microcircuit.py",
+                    "score": 77.35849056603773,
+                    "nlines": 53,
+                    "ncomments": 41,
+                    "error": [],
+                    "log": [
+                        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/run_microcircuit.py: n empty lines = 15"
+                    ]
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/spike_recorder-7720-0.dat",
+                    "score": 0.0,
+                    "nlines": 8522,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/rate2.dat",
+                    "score": 0.0,
+                    "nlines": 2192,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/spike_recorder-7723-0.dat",
+                    "score": 0.0,
+                    "nlines": 831,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/rate4.dat",
+                    "score": 0.0,
+                    "nlines": 485,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/rate1.dat",
+                    "score": 0.0,
+                    "nlines": 583,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/spike_recorder-7722-0.dat",
+                    "score": 0.0,
+                    "nlines": 2781,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/spike_recorder-7719-0.dat",
+                    "score": 0.0,
+                    "nlines": 1104,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/spike_recorder-7725-0.dat",
+                    "score": 0.0,
+                    "nlines": 2038,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/spike_recorder-7718-0.dat",
+                    "score": 0.0,
+                    "nlines": 910,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/rate7.dat",
+                    "score": 0.0,
+                    "nlines": 295,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/rate6.dat",
+                    "score": 0.0,
+                    "nlines": 1440,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/rate3.dat",
+                    "score": 0.0,
+                    "nlines": 548,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/spike_recorder-7721-0.dat",
+                    "score": 0.0,
+                    "nlines": 2683,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/rate5.dat",
+                    "score": 0.0,
+                    "nlines": 106,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/rate0.dat",
+                    "score": 0.0,
+                    "nlines": 2068,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/spike_recorder-7724-0.dat",
+                    "score": 0.0,
+                    "nlines": 1121,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNEST/reference_data/population_nodeids.dat",
+                    "score": 0.0,
+                    "nlines": 8,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/osbSessions/main.osb.json",
+                    "score": 0.0,
+                    "nlines": 162,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/osbSessions/MicrocircuitNoInput_2pcnt_MODELf32339edc42e9df4a4be1ec00eeee8e4.xmi",
+                    "score": 0.0,
+                    "nlines": 16,
+                    "ncomments": 0,
+                    "error": [],
+                    "log": [
+                        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/osbSessions/MicrocircuitNoInput_2pcnt_MODELf32339edc42e9df4a4be1ec00eeee8e4.xmi: n empty lines = 0"
+                    ]
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/osbSessions/script.js",
+                    "score": 0.0,
+                    "nlines": 1,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/images/pynest_rasterplot_0.1.png",
+                    "score": 0.0,
+                    "nlines": 0,
+                    "ncomments": 0,
+                    "error": [
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/images/pynest_rasterplot_1.0.png",
+                    "score": 0.0,
+                    "nlines": 0,
+                    "ncomments": 0,
+                    "error": [
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/images/pynest_firing_rates_0.1.png",
+                    "score": 0.0,
+                    "nlines": 0,
+                    "ncomments": 0,
+                    "error": [
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/images/nestsli_rasterplot_0.1.png",
+                    "score": 0.0,
+                    "nlines": 0,
+                    "ncomments": 0,
+                    "error": [
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/images/pynest_firing_rates_1.0.png",
+                    "score": 0.0,
+                    "nlines": 0,
+                    "ncomments": 0,
+                    "error": [
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/images/nestsli_firing_rates_0.1.png",
+                    "score": 0.0,
+                    "nlines": 0,
+                    "ncomments": 0,
+                    "error": [
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/images/nestsli_firing_rates_1.0.png",
+                    "score": 0.0,
+                    "nlines": 0,
+                    "ncomments": 0,
+                    "error": [
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/images/nestsli_rasterplot_1.0.png",
+                    "score": 0.0,
+                    "nlines": 0,
+                    "ncomments": 0,
+                    "error": [
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/images/pynn_nest_plots_1.0.png",
+                    "score": 0.0,
+                    "nlines": 0,
+                    "ncomments": 0,
+                    "error": [
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/sim_params.py",
+                    "score": 0.0,
+                    "nlines": 43,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/README.md",
+                    "score": 0.0,
+                    "nlines": 61,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/.test.pynn.mep",
+                    "score": 0.0,
+                    "nlines": 26,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/network.py",
+                    "score": 11.11111111111111,
+                    "nlines": 162,
+                    "ncomments": 18,
+                    "error": [],
+                    "log": [
+                        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/network.py: n empty lines = 34"
+                    ]
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/plotting.py",
+                    "score": 15.0,
+                    "nlines": 60,
+                    "ncomments": 9,
+                    "error": [],
+                    "log": [
+                        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/plotting.py: n empty lines = 13"
+                    ]
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/validation_microcircuit.py",
+                    "score": 0.0,
+                    "nlines": 109,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/x-objective-c"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/network_params.py",
+                    "score": 0.0,
+                    "nlines": 189,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/.test.pynnnest.omt",
+                    "score": 0.0,
+                    "nlines": 101,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/microcircuit.py",
+                    "score": 37.03703703703704,
+                    "nlines": 81,
+                    "ncomments": 30,
+                    "error": [],
+                    "log": [
+                        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/microcircuit.py: n empty lines = 22"
+                    ]
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/connectivity.py",
+                    "score": 20.0,
+                    "nlines": 15,
+                    "ncomments": 3,
+                    "error": [],
+                    "log": [
+                        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/connectivity.py: n empty lines = 4"
+                    ]
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/.test.pynnnest.comparison.omt",
+                    "score": 0.0,
+                    "nlines": 101,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/scaling.py",
+                    "score": 7.317073170731708,
+                    "nlines": 41,
+                    "ncomments": 3,
+                    "error": [],
+                    "log": [
+                        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/scaling.py: n empty lines = 6"
+                    ]
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/run_microcircuit.py",
+                    "score": 10.344827586206897,
+                    "nlines": 29,
+                    "ncomments": 3,
+                    "error": [],
+                    "log": [
+                        "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/PyNN/run_microcircuit.py: n empty lines = 8"
+                    ]
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/NeuroML2/MicrocircuitNoInput_2pcnt.net.nml.h5",
+                    "score": 0.0,
+                    "nlines": 0,
+                    "ncomments": 0,
+                    "error": [
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/NeuroML2/MicrocircuitNoInput_2pcnt.net.nml",
+                    "score": 0.0,
+                    "nlines": 64473,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/NeuroML2/.test.validate.omt",
+                    "score": 0.0,
+                    "nlines": 5,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/NeuroML2/MicrocircuitNoInput_5pcnt.net.nml.h5",
+                    "score": 0.0,
+                    "nlines": 0,
+                    "ncomments": 0,
+                    "error": [
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/NeuroML2/MicrocircuitNoInput_10pcnt.net.nml.h5",
+                    "score": 0.0,
+                    "nlines": 0,
+                    "ncomments": 0,
+                    "error": [
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte",
+                        "'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/NEST_SLI/user_params.sli",
+                    "score": 0.0,
+                    "nlines": 34,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/NEST_SLI/README.md",
+                    "score": 0.0,
+                    "nlines": 94,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/NEST_SLI/.test.nestsli.mep",
+                    "score": 0.0,
+                    "nlines": 29,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/NEST_SLI/sim_params.sli",
+                    "score": 0.0,
+                    "nlines": 88,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/NEST_SLI/run_microcircuit.sh",
+                    "score": 0.0,
+                    "nlines": 43,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/NEST_SLI/.test.nestsli.omt",
+                    "score": 0.0,
+                    "nlines": 113,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/NEST_SLI/network_params.sli",
+                    "score": 0.0,
+                    "nlines": 170,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/NEST_SLI/microcircuit.sli",
+                    "score": 0.0,
+                    "nlines": 468,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/NEST_SLI/spike_analysis.py",
+                    "score": 0.0,
+                    "nlines": 152,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/NEST_SLI/test/create_large_network_sim.sh",
+                    "score": 0.0,
+                    "nlines": 49,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                },
+                {
+                    "filename": "/tmp/cwl-test/code/master/PotjansDiesmann2014-master/NEST_SLI/test/create_small_network_sim.sh",
+                    "score": 0.0,
+                    "nlines": 48,
+                    "ncomments": 0,
+                    "error": [
+                        "Unsupported MIME type text/plain"
+                    ],
+                    "log": []
+                }
+            ],
+            "paper": false,
+            "homepage": false
+        }
+    },
+    "advice": [],
+    "decision": null
+}

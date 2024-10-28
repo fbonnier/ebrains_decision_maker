@@ -1,0 +1,36 @@
+#!/bin/bash
+
+JSON=""
+
+RUN_INSTR="python3 $( dirname -- "$0"; )/main.py "
+RUN_INSTR_ORIGIN=$RUN_INSTR
+
+NARGS=$(($#))
+
+for (( iarg=1; iarg<=NARGS; iarg++)); do
+    
+    if [ ${!iarg} == "--json" ]; then
+        RUN_INSTR="$RUN_INSTR --json"
+
+        for (( jarg=$((iarg+1)); jarg<=NARGS; jarg++ )); do
+            echo ${!jarg}
+            RUN_INSTR="$RUN_INSTR ${!jarg}"
+        done
+
+    elif [ ${!iarg} == "--out" ]; then
+        RUN_INSTR="$RUN_INSTR --out"
+        jarg=$((iarg+1))
+        echo ${!jarg}
+        RUN_INSTR="$RUN_INSTR ${!jarg}"
+
+    fi
+done
+
+
+if [ "$RUN_INSTR" == "$RUN_INSTR_ORIGIN" ]; then
+    echo "Paramters are missing"
+else
+    echo $RUN_INSTR
+    $RUN_INSTR
+fi
+
