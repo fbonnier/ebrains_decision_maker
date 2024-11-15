@@ -9,10 +9,10 @@ import os
 import argparse
 import json
 import statistics
-from interval import interval, inf
+# from interval import interval, inf
 import traceback
 
-decisions = {"Red": interval([0, 50]), "Orange": interval([50, 70]), "Yellow": interval([70, 80]), "Green": interval([80, 100])}
+# decisions = {"Red": interval([0, 50]), "Orange": interval([50, 70]), "Yellow": interval([70, 80]), "Green": interval([80, 100])}
 
 error_types = {
     "Missing data": 
