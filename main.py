@@ -135,11 +135,11 @@ if __name__ == "__main__":
                         decision_block = compute_final_scores_1method(decision_block, report_data)
 
                     except Exception as e:
-                        decision_block["log"].append (str("".join(traceback.format_exception(etype=type(e), value=e, tb=e.__traceback__))))
-                        print (str("".join(traceback.format_exception(etype=type(e), value=e, tb=e.__traceback__))))
+                        decision_block["log"].append (str("".join(traceback.format_exception(e))))
+                        print (str("".join(traceback.format_exception(e))))
 
             except Exception as e:
-                decision_block["log"].append (str("".join(traceback.format_exception(etype=type(e), value=e, tb=e.__traceback__))))
+                decision_block["log"].append (str("".join(traceback.format_exception(e))))
 
         # Calculate final score
         decision_block["score"] = decision_block["score"]/len(report_list)
@@ -148,7 +148,7 @@ if __name__ == "__main__":
         with open (output_report.name, 'w') as score_file:
             json.dump(decision_block, score_file, indent=4)
     except Exception as e:
-        print (str("".join(traceback.format_exception(etype=type(e), value=e, tb=e.__traceback__))))
+        print (str("".join(traceback.format_exception(e))))
     
 
     # # 1: Open the JSON report containing differences and scores of two list of files
