@@ -41,7 +41,7 @@ def get_delta_array_per_type (report_data):
 
     return to_return
 
-def compute_final_scores_1method (decision_block:dict, method_block:dict):
+def compute_final_scores_1method (decision_block:dict, method_block:dict) -> dict:
 
 
     for ikey in method_block.keys():
@@ -50,7 +50,7 @@ def compute_final_scores_1method (decision_block:dict, method_block:dict):
         decision_block["score"] += method_block[ikey]["score"]
 
         # Add Method's report to final report
-        decision_block["report"][ikey]= method_block[ikey]["report"]
+        # decision_block["report"][ikey]= method_block[ikey]["report"]
 
         # Add Method's logs to final log
         decision_block["log"] += method_block[ikey]["log"]
@@ -135,11 +135,11 @@ if __name__ == "__main__":
                         decision_block = compute_final_scores_1method(decision_block, report_data)
 
                     except Exception as e:
-                        decision_block["log"].append (str("".join(traceback.format_exception(e))))
+                        decision_block["error"].append (str("".join(traceback.format_exception(e))))
                         print (str("".join(traceback.format_exception(e))))
 
             except Exception as e:
-                decision_block["log"].append (str("".join(traceback.format_exception(e))))
+                decision_block["error"].append (str("".join(traceback.format_exception(e))))
 
         # Calculate final score
         decision_block["score"] = decision_block["score"]/len(report_list)
